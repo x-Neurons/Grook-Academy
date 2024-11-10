@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grook Academy | Learn to code from your Browser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <ul class="center-ul">
+                <img src="./task-imgs/grook-logo.svg" alt="" class="logo">
+                <li class="school" onclick=toggleSchool()>Schools <span><svg width="14" height="14" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z"
+                                fill="currentColor" />
+                        </svg></span></li>
+
+                <li>Universities</li>
+
+                <li class="Event" onclick=toggleEvent()>Events<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z"
+                                fill="currentColor" />
+                        </svg></span></li>
+                <li>About Us<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z"
+                                fill="currentColor" />
+                        </svg></span></li>
+                <li>Corporate Engagement</li>
+            </ul>
+            <ul class="right-ul">
+                <li>Support</li>
+                <li>Log In</li>
+                <li>Register</li>
+                <button class="menuBtn" onclick="toggle()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+                            fill="currentColor" />
+                        <path
+                            d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+                            fill="currentColor" />
+                        <path
+                            d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+                            fill="currentColor" />
+                    </svg></button>
+            </ul>
+        </nav>
+
+        <!-- Drop Menus -->
+        <div class="drop-menu">
+            <ul class="drop-center-ul">
+                <li class="list school" onclick=toggleSchool()>Schools<span><svg width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z"
+                                fill="currentColor" />
+                        </svg></span></li>
+                <li class="list">Universities</li>
+                <li class="list Event" onclick=toggleEvent()>Events<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z"
+                                fill="currentColor" />
+                        </svg></span></li>
+                <li class="list">About Us<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z"
+                                fill="currentColor" />
+                        </svg></span></li>
+                <li class="list">Corporate Engagement</li>
+
+                <li class="list">Support</li>
+                <li class="list">Log In</li>
+                <li class="list">Register</li>
+            </ul>
+        </div>
+        <div class="drop-menu-school">
+            <ul>
+                <li>Courses</li>
+                <li>Resources</li>
+                <li>Cyber AU</li>
+                <li>Cyber NZ</li>
+                <li>Development Pack</li>
+            </ul>
+        </div>
+        <div class="drop-menu-event">
+            <ul>
+                <li>Coding Event</li>
+                <li>Web Event</li>
+                <li>Cyber Event</li>
+                <li>NZ Event</li>
+                <li>Development Event</li>
+            </ul>
+        </div>
+        <section class="hero">
+            <div class="left-section">
+                <h2>Your Home For Digital <br>
+                    Technologies Education
+                </h2>
+                <button class="start">Start For Free</button>
+                <button class="explore">Explore Our Courses</button>
+            </div>
+            <div class="center-section"></div>
+            <div class="right-section"></div>
+        </section>
+        <!-- Section Hero -->
+        <div class="second-section">
+            <p>Grok Academy is your home for Digital Technologies education offering classroom-ready online and
+                unplugged resources. Drawing on decades of experience in teaching digital technologies, we provide
+                support through teaching resources, professional learning, and curriculum guidance. As an Australian
+                charity, we aim to empower the next generation with the skills, knowledge, and dispositions they need to
+                become the creators of tomorrow.</p>
+            <div class="cards">
+                <div class="card card-1">
+                    <img src="./task-imgs/card-1.svg" alt="">
+                    <h2>Unpack the Digital <br>
+                        Technologies Curriculum</h2>
+                    <button>Curriculum</button>
+                </div>
+                <div class="card card-2">
+                    <img src="./task-imgs/card-2.svg" alt="">
+                    <h2>Challenges and Resources <br>
+                        for your classroom</h2>
+                    <button>Resources</button>
+                </div>
+                <div class="card card-3">
+                    <img src="./task-imgs/card-3.svg" alt="">
+                    <h2>Professional Learning <br>
+                        resources to support you</h2>
+                    <button>Teacher PL</button>
+                </div>
+                <div class="card card-4">
+                    <img src="./task-imgs/card-4.svg" alt="" width="auto" height="60%">
+                    <h2>Online Courses-Intractive <br>
+                        and Engaging</h2>
+                    <button>Online Learning Platform</button>
+                </div>
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.second-section -->
+        <div class="third-section">
+            <div class="tiles">
+                <div class="tile"><button>International Prices</button></div>
+                <div class="tile"><button>Course List</button></div>
+                <div class="tile"><button>Competition Schedule</button></div>
+                <div class="tile"><button>Universities</button></div>
+            </div>
+            <!-- /.tiles -->
+        </div>
+        <!-- /.third-section -->
+        <div class="fourth-section">
+            <h3>Learning to Code has never been so accessible!</h3>
+            <div class="learning">
+                <div class="left-1">
+                    <img src="./task-imgs/left-1.svg" alt="">
+                    <p>Challenging problems</p> <br>
+                    <p>Our problem-based learning approach matches each new concept with a problem so students learn by
+                        doing!</p>
+                </div>
+                <div class="left-2">
+                    <img src="./task-imgs/left-2.svg" alt="">
+                    <p>Interactive notes</p> <br>
+                    <p>Dive straight into coding while using the notes, with interactive code snippets that can be
+                        edited and run.</p>
+                </div>
+                <div class="center-pic">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                    <div class="line line-4"></div>
+                    <img src="./task-imgs/laptop.svg" alt="">
+                </div>
+                <div class="right-1">
+                    <img src="./task-imgs/right-1.svg" alt="">
+                    <p>Code in the Browser</p> <br>
+                    <p>Code from any device, any time - students can start a question on an iPad at school and finish it
+                        off on their computer at home.</p>
+                </div>
+                <div class="right-2">
+                    <img src="./task-imgs/right-2.svg" alt="">
+                    <p>Intelligent Automaking</p> <br>
+                    <p>Our automarker breaks each problem down into tests and gives students useful feedback to help
+                        them solve it!</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.fourth-section -->
+        <div class="fifth-section">
+            <div class="box">
+                <div class="left-box">
+                    <img src="./task-imgs/badge.svg" alt="">
+                    <p> Created by coding and education experts <br><br>
+                        All our resources are created by a team of highly experienced educators. We understand the
+                        pressures of classroom teaching and know what works to keep students engaged and learning.</p>
+                </div>
+                <div class="right-box">
+                    <img src="./task-imgs/lock.svg" alt="">
+                    <p>Feel safe online <br><br>
+                        Only verified teachers and parents can see and manage student data. Find out more about how we
+                        protect yours and your students' information in our Privacy Policy.</p>
+                </div>
+            </div>
+        </div>
+        <!-- /.fifth-section -->
+        <div class="sixth-section">
+            <div class="item-box">
+                <h2>What people are saying</h2>
+                <p>"I learnt a lot about Python programming and coding in general doing a Grok competition. It was
+                    challenging, but I learnt lots and it made me marvel at the delights of programming. It was really
+                    fun, and I'd love to do it in the future. I also loved the pop culture references!"</p>
+                <p style="font-style: italic;">Bethany, Year 8, NSW</p>
+            </div>
+        </div>
+        <!-- /.sixth-section -->
+        <div class="seventh-section">
+            <p>Start Programming the Future</p>
+            <button class="register-btn" onclick=registered()>
+                Register
+            </button>
+        </div>
+        <!-- /.seventh-section -->
+        <footer>
+            <div class="bar-1">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Privacy Policies</a></li>
+                    <li><a href="">Teacher information</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+            <div class="bar-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.00977 5.83789C3.00977 5.28561 3.45748 4.83789 4.00977 4.83789H20C20.5523 4.83789 21 5.28561 21 5.83789V17.1621C21 18.2667 20.1046 19.1621 19 19.1621H5C3.89543 19.1621 3 18.2667 3 17.1621V6.16211C3 6.11449 3.00333 6.06765 3.00977 6.0218V5.83789ZM5 8.06165V17.1621H19V8.06199L14.1215 12.9405C12.9499 14.1121 11.0504 14.1121 9.87885 12.9405L5 8.06165ZM6.57232 6.80554H17.428L12.7073 11.5263C12.3168 11.9168 11.6836 11.9168 11.2931 11.5263L6.57232 6.80554Z"
+                        fill="currentColor" />
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"
+                        fill="currentColor" />
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z"
+                        fill="currentColor" />
+                </svg>
+            </div>
+            <div class="bar-3">
+                <p class="p-1">Grok Academy Limited — A.B.N. 31 643 542 054</p>
+                <p class="p-2">Grok acknowledges and pays respect to the past, present and future Traditional Custodians
+                    and Elders
+                    of this nation and the continuation of cultural, spiritual and educational practices of Aboriginal
+                    and Torres Strait Islander peoples.</p>
+                <p class="p-2">Grok accepts the invitation of the Uluru Statement from the Heart and supports a First
+                    Nations Voice
+                    to Parliament enshrined in the Australian Constitution.</p>
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </div>
+    <!-- /.main -->
+
+    <script>
+
+        const menu = document.querySelector('.drop-menu');
+        function toggle() {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+        
+        const menuSchool = document.querySelector('.drop-menu-school');
+        function toggleSchool() {
+            if (menuSchool.style.display == 'none') {
+                menuSchool.style.display = 'block';
+            } else {
+                menuSchool.style.display = 'none';
+            }
+        }
+        const menuEvent = document.querySelector('.drop-menu-event');
+        function toggleEvent() {
+            if (menuEvent.style.display == 'none') {
+                menuEvent.style.display = 'block';
+            } else {
+                menuEvent.style.display = 'none';
+            }
+        }
+
+        function registered() {
+            const btn = document.querySelector('.register-btn');
+            btn.innerHTML = "You are Registered"
+            console.log("Registered");
+        }
+
+         
+
+    </script>
+</body>
+
+</html>

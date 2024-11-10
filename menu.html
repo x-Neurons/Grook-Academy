@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-Menu</title>
+    <style>
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            margin: 100px;
+            
+        }
+        .box button{
+            background-color: aqua;
+            border: none;
+            padding: 20px 40px 20px 40px;
+            border-radius: 20px;
+        }
+        .menu{
+            border: 2px solid black;
+            display: none;
+            position: absolute;
+            top: 45%;
+            padding: 50px;
+            
+        }
+        .menu ul {
+            background-color: aqua;
+            display: inline-block;
+            padding: 20px;
+            color: brown;
+            border-radius: 10px;
+        }
+        .menu ul li{
+            list-style: none;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button class="btn" onclick="toggle()">Menu</button>
+        <div class="menu">
+            <ul>
+                <li class="menu-li">A</li>
+                <li class="menu-li">B</li>
+                <li class="menu-li">C</li>
+            </ul>
+        </div>
+    </div>
+    <script> 
+        const menu = document.querySelector('.menu');
+        function toggle() {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+                
+            }
+        }
+    </script>
+</body>
+</html>
